@@ -75,8 +75,8 @@ function encrypt(){
     enigma.rotors.push(new Rotor(conf.rotors[(rotorSlot[2]*1)-1].slice(), Rotor.alphabet.indexOf(rotorPos[2]), 0));
     enigma.reflector=new CharMap(conf.reflector[0], conf.reflector[1]);
 
-    $('#output').text(enigma.translate(input));
-    
+    //$('#output').text(enigma.translate(input));
+    writeOutput(enigma.translate(input));
 }
     
 function showError(msg) {
@@ -86,8 +86,27 @@ function showError(msg) {
     setTimeout(function(){e.hide();}, 4000);
 }
 
+function writeOutput(text) {
+    var out = [];
+    $.each(text.split(''), function(i,v){
+        out.push(v);
+        if ((i + 1) % 4 == 0) {
+            out.push(' ');
+        } 
+    });
+    $('#output').text(out.join(''));
+}
 
-    
+
+$('#settings_toggle').bind('click', function(){
+    $('#settings').toggle('slide');
+});
+
+$('#input').bind('keyup', function(){
+    $('#input').val($('#input').val().toUpperCase().replace(/[^A-Z]+/g,''));
+    encrypt();
+});
+
 $('#process').bind('click', function(){
     encrypt();
 });
