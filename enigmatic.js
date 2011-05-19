@@ -22,6 +22,7 @@ if (urlParams.ciphertext) {
 
 $('#transmitFB').bind('click', function(){
     publishCipherText($('#output').val());
+    return false;
 });
 
 $('#transmitTW').bind('click', function(){
