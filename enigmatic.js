@@ -12,6 +12,8 @@ var urlParams = {};
 
 if (urlParams.ciphertext) {
     $('#input').val(urlParams.ciphertext);
+    // Show the decrypt button
+    $('#process').show();
 }
 
 
