@@ -48,7 +48,7 @@
 		<tr><td id="key1" colspan="5" style="height:25px; background-color:#c33; font-family:monospace; font-size:12px; border:solid 1px #000; text-align:center">&nbsp;</td></tr> 
 		<tr><td class="rubrik" style="width:290px">I n p u t</td> 
 		<td  class="rubrik" style="width:180px">W h e e l s</td> 
-		<td  class="rubrik" style="width:200px">O u t p u t</td> 
+		<td  class="rubrik" style="width:180px">O u t p u t</td> 
 		</tr> 
 		<tr><td id="txtfeld" style="display:none"> 
 		<textarea name="inp" title="Paste with Ctrl+V" rows="10" cols="35" style="border:solid 1px #b9b8b6; padding:5px; width:300px; height:180px;" onKeyUp="this.form.out.value=enigma(this.value.toLowerCase())" onDblClick="this.select()"></textarea></td> 
@@ -158,11 +158,10 @@
 		 
 		<td> 
 		<textarea id="output" name="out" rows="6" 
-					 
 					readonly="readonly" 
-					style="border:solid 1px #b9b8b6;padding:5px;height:130px;width:220px;"></textarea> 
+					style="border:solid 1px #b9b8b6;padding:5px;height:130px;width:180px;"></textarea> 
 		<button id="transmitFB">Transmit via Facebook</button><br/>
-		<button id="transmitTW">Transmit via Twitter</button>
+		<button id="transmitTW" style="display:none;">Transmit via Twitter</button>
 		</td></tr> 
 		</table> 
 		 
