@@ -107,6 +107,7 @@ $('#settings_toggle').bind('click', function(){
 $('#input').bind('keyup', function(){
     $('#input').val($('#input').val().toUpperCase().replace(/[^A-Z]+/g,''));
     encrypt();
+    return false;
 });
 
 $('#process').bind('click', function(){
