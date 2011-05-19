@@ -20,7 +20,12 @@ if (urlParams.ciphertext) {
 }
 
 
-$('#transmit').bind('click', function(){
+$('#transmitFB').bind('click', function(){
     publishCipherText($('#output').val());
+});
+
+$('#transmitTW').bind('click', function(){
+	var messagetext = $('#output').val();
+	var ciphertext = messagetext.replace(/ /g, '');
 });
 
