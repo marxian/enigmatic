@@ -99,7 +99,7 @@ function writeOutput(text) {
 
 
 $('#settings_toggle').bind('click', function(){
-    $('#settings').toggle('slide');
+    $('#settings').toggle();
 });
 
 $('#input').bind('keyup', function(){
