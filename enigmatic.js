@@ -1,3 +1,20 @@
+var urlParams = {};
+(function () {
+    var e,
+        a = /\+/g,  // Regex for replacing addition symbol with a space
+        r = /([^&=]+)=?([^&]*)/g,
+        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+        q = window.location.search.substring(1);
+
+    while (e = r.exec(q))
+       urlParams[d(e[1])] = d(e[2]);
+})();
+
+if (urlParams.ciphertext) {
+    $('#input').val(urlParams.ciphertext);
+}
+
+
 var conf={
     rotors:[
         ['Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M'],
@@ -68,6 +85,8 @@ function showError(msg) {
     e.show();
     setTimeout(function(){e.hide();}, 4000);
 }
+
+
     
 $('#process').bind('click', function(){
     encrypt();
