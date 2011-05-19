@@ -21,9 +21,10 @@ function publishCipherText(ciphertext) {
   FB.ui({
     message:ciphertext,
     link:decrypt_link,
-    name:'Enigma by Bletchley',
-    caption:'{*actor*} encrypted this message',
-    description:'Follow the link to decrypt',
+    picture: 'http://enigmatic.neontribe.co.uk/images/post_icon.jpg',
+    name:'Enigmatic',
+    caption:'{*actor*} encrypted this message with an Enigma machine',
+    description:'You can use the \"Decrypt\" link to try to find out what they posted.',
     method: 'stream.publish',
     action_links: [{
       text: 'Decrypt',
