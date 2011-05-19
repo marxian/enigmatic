@@ -1,6 +1,5 @@
 var Config = null; 
 
-
 function facebookInit(config) {
   Config = config;
   FB.init({
@@ -17,10 +16,10 @@ function goHome() {
   top.location = 'http://apps.facebook.com/' + Config.canvasName + '/';
 }
 
-function publishCipherText(message) {
-  var decrypt_link = 'http://apps.facebook.com/' + Config.canvasName + '/?ciphertext=' + 'TESTTHIS';
+function publishCipherText(ciphertext) {
+  var decrypt_link = 'http://apps.facebook.com/' + Config.canvasName + '/?ciphertext=' + ciphertext;
   FB.ui({
-    message:message,
+    message:ciphertext,
     link:decrypt_link,
     name:'Enigma by Bletchley',
     caption:'{*actor*} encrypted this message',
