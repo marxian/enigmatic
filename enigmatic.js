@@ -112,6 +112,6 @@ $('#process').bind('click', function(){
 });
 
 $('#transmit').bind('click', function(){
-    publishCipherText($('#output').text().replace(/ /g, ''));
+    publishCipherText($('#output').text());
 });
 
