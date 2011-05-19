@@ -17,7 +17,7 @@ function goHome() {
 }
 
 function publishCipherText(ciphertext) {
-  var decrypt_link = 'http://apps.facebook.com/' + Config.canvasName + '/?ciphertext=' + ciphertext.replace(' ', '');
+  var decrypt_link = 'http://apps.facebook.com/' + Config.canvasName + '/?ciphertext=' + ciphertext;
   FB.ui({
     message:ciphertext,
     link:decrypt_link,
