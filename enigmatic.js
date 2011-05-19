@@ -11,9 +11,12 @@ var urlParams = {};
 })();
 
 if (urlParams.ciphertext) {
-    $('#input').val(urlParams.ciphertext);
-    // Show the decrypt button
-    //$('#process').show();
+    // If we have cipher text we'll cheat an input character at a time
+    $.each(urlParams.ciphertext.split(''), function(i,v){
+    	setTimeout(function(){ 
+    		en2(v);
+    	}, 500 + i * 500);
+    });
 }
 
 

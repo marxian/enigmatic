@@ -716,32 +716,32 @@ input { margin:0 }
 <!--   QWERTZU-Field   --> 
  
 <div class="k" style="width:300px; background-color:black; color:gray; font-family:Arial,sans-serif; font-size:16px;"><div title="Virtual keyboard" style="padding:20px; border:0px"> 
-<a name="kqw" href="javascript:en2('Q')">&nbsp;Q&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('W')">&nbsp;W&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('E')">&nbsp;E&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('R')">&nbsp;R&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('T')">&nbsp;T&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('Z')">&nbsp;Z&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('U')">&nbsp;U&nbsp;</a> 
-<a name="kqw" href="javascript:en2('I')">&nbsp; I &nbsp;</a> 
-<a name="kqw" href="javascript:en2('O')">&nbsp;O&nbsp;</a><br><br>&nbsp;&nbsp;&nbsp;
-<a name="kqw" href="javascript:en2('A')">&nbsp;A&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('S')">&nbsp;S&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('D')">&nbsp;D&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('F')">&nbsp;F&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('G')">&nbsp;G&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('H')">&nbsp;H&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('J')">&nbsp;J &nbsp;</a> 
-<a name="kqw" href="javascript:en2('K')">&nbsp;K&nbsp;</a><br><br>&nbsp;
-<a name="kqw" href="javascript:en2('P')">&nbsp;P&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('Y')">&nbsp;Y&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('X')">&nbsp;X&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('C')">&nbsp;C&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('V')">&nbsp;V&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('B')">&nbsp;B&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('N')">&nbsp;N&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('M')">&nbsp;M&nbsp;</a>&nbsp;
-<a name="kqw" href="javascript:en2('L')">&nbsp;L&nbsp;</a><br><br> 
+<a name="kqw" id="kQ" href="javascript:en2('Q')">&nbsp;Q&nbsp;</a>&nbsp;
+<a name="kqw" id="kW" href="javascript:en2('W')">&nbsp;W&nbsp;</a>&nbsp;
+<a name="kqw" id="kE" href="javascript:en2('E')">&nbsp;E&nbsp;</a>&nbsp;
+<a name="kqw" id="kR" href="javascript:en2('R')">&nbsp;R&nbsp;</a>&nbsp;
+<a name="kqw" id="kT" href="javascript:en2('T')">&nbsp;T&nbsp;</a>&nbsp;
+<a name="kqw" id="kZ" href="javascript:en2('Z')">&nbsp;Z&nbsp;</a>&nbsp;
+<a name="kqw" id="kU" href="javascript:en2('U')">&nbsp;U&nbsp;</a> 
+<a name="kqw" id="kI" href="javascript:en2('I')">&nbsp; I &nbsp;</a> 
+<a name="kqw" id="kO" href="javascript:en2('O')">&nbsp;O&nbsp;</a><br><br>&nbsp;&nbsp;&nbsp;
+<a name="kqw" id="kA" href="javascript:en2('A')">&nbsp;A&nbsp;</a>&nbsp;
+<a name="kqw" id="kS" href="javascript:en2('S')">&nbsp;S&nbsp;</a>&nbsp;
+<a name="kqw" id="kD" href="javascript:en2('D')">&nbsp;D&nbsp;</a>&nbsp;
+<a name="kqw" id="kF" href="javascript:en2('F')">&nbsp;F&nbsp;</a>&nbsp;
+<a name="kqw" id="kG" href="javascript:en2('G')">&nbsp;G&nbsp;</a>&nbsp;
+<a name="kqw" id="kH" href="javascript:en2('H')">&nbsp;H&nbsp;</a>&nbsp;
+<a name="kqw" id="kJ" href="javascript:en2('J')">&nbsp;J &nbsp;</a> 
+<a name="kqw" id="kK" href="javascript:en2('K')">&nbsp;K&nbsp;</a><br><br>&nbsp;
+<a name="kqw" id="kP" href="javascript:en2('P')">&nbsp;P&nbsp;</a>&nbsp;
+<a name="kqw" id="kY" href="javascript:en2('Y')">&nbsp;Y&nbsp;</a>&nbsp;
+<a name="kqw" id="kX" href="javascript:en2('X')">&nbsp;X&nbsp;</a>&nbsp;
+<a name="kqw" id="kC" href="javascript:en2('C')">&nbsp;C&nbsp;</a>&nbsp;
+<a name="kqw" id="kV" href="javascript:en2('V')">&nbsp;V&nbsp;</a>&nbsp;
+<a name="kqw" id="kB" href="javascript:en2('B')">&nbsp;B&nbsp;</a>&nbsp;
+<a name="kqw" id="kN" href="javascript:en2('N')">&nbsp;N&nbsp;</a>&nbsp;
+<a name="kqw" id="kM" href="javascript:en2('M')">&nbsp;M&nbsp;</a>&nbsp;
+<a name="kqw" id="kL" href="javascript:en2('L')">&nbsp;L&nbsp;</a><br><br> 
 <span style="font-size:0.8em; color:#a52a2a; text-align:right">Click on the keys above or type here: <input type="text" name="inpqw" title="Paste with Ctrl+V" size="1" style="text-align:center;" onKeyUp="en2(this.value); this.value='';"></span> 
 </div></div></td> 
  
@@ -825,7 +825,7 @@ input { margin:0 }
  
 <tr><td align="center"> 
 <form name="k" action=""> 
-<div><input type="button" name="qw" title="Switch input mode" onClick="fadeInp()" value="Text input field "> &nbsp; <input type="button" name="stl" onClick="fadeSt()" value="Show plugboard"> &nbsp; <input type="button" name="knopf" onClick="fade()" value=" Show monitor "> &nbsp; <input type="button" name="neuladen" onClick="window.location.href=window.location.href" value="= New session ="></div> 
+<div><input type="button" name="qw" title="Switch input mode" onClick="fadeInp()" value="Text input field "> &nbsp; <input type="button" name="stl" onClick="fadeSt()" value="Show plugboard"> &nbsp; <input type="button" name="knopf" onClick="fade()" value=" Show monitor "> &nbsp; <input type="button" name="neuladen" onClick="window.location.href=window.location.pathname" value="= New session ="></div> 
 </form> 
 </td></tr> 
  
