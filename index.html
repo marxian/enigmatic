@@ -1,0 +1,32 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta charset="utf-8">
+    <title>Enigmatic </title>
+    <meta name="description" content="Encrypt your status with an enigma machine.">
+  </head>
+  <body>
+    <h1>Enigmatic</h1>
+
+
+
+    
+    <script src="./enigma.js"></script>
+    <script src="./enigmatic.js"></script>
+    <script src="./facebookify.js"></script>
+    
+    <div id="fb-root"></div>
+    <script>
+      // async loading of facebook js sdk
+      window.fbAsyncInit = function() { facebookInit({'appId':'103098986448411',
+                                                      'canvasName':'enigma-machine'});
+                                       };
+      (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+</body>
+
+</html>
