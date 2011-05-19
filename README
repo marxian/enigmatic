@@ -1,0 +1,11 @@
+=========
+ENIGMATIC
+=========
+
+Enigmatic is a facebook wrapper for Graham Bradley's JavaScript Enigma Machine simulator.
+
+It lets Facebooker's post encrypted text to their walls and visit the app to get decrypts.
+
+There are functional rotor, ring and patchboard settings so that users can make their messages undecipherable (well, kinda :-) unless they share their settings with others.
+
+The app is plain HTML and javascript.
