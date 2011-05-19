@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Enigmatic </title>
     <meta name="description" content="Encrypt your status with an enigma machine.">
+    <style>
+        #footer {
+            margin-top: 150px;
+        }
+    </style>
   </head>
   <body>
     <h1>Enigmatic</h1>
@@ -73,7 +78,8 @@
             </div>
         </div>
     </div>
-
+    <br/>
+    <label for="input">Message:</label>
     <input id="input" value=""/>
     <p id="error" style="display:none;"></p>
     
@@ -83,7 +89,9 @@
     <button id="transmit">Transmit</button>
 
 
-
+    <div id="footer">
+        <p>Thanks to <a href="http://gbradley.com">gbradley</a> for providing the Enigma simulator which powers this app.</p>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="./enigma.js"></script>
     <script src="./enigmatic.js"></script>
