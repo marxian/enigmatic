@@ -33,14 +33,14 @@ $('#transmitTW').bind('click', function(){
     url += ciphertext;
     url += '&text=';
     url += messagetext.replace(/ /g, '+');
-    url += '+%23enigmatic';
+    url += '+%23enigmatic+%23bpark';
     window.open(url,'Tweet','width=400,height=300');
     return false;
 
 });
 
 enigmatic.bind('inputEncrypted', function(){
-    if ($('#output').val().length > 110) {
+    if ($('#output').val().length > 105) {
         alert('Your message is too long for Twitter transmission');
         $('#transmitTW').hide();
     } else {
