@@ -161,8 +161,8 @@
 					readonly="readonly" 
 					style="border:solid 1px #b9b8b6;padding:5px;height:130px;width:180px;"></textarea> 
 		<button id="transmitFB">Transmit via Facebook</button><br/>
-		<button id="transmitTW" style="display:none;">Transmit via Twitter</button>
-		</td></tr> 
+		<button id="transmitTW">Transmit via Twitter</button>
+		</td></tr>
 		</table> 
 		 
 		</form> 
@@ -170,7 +170,7 @@
 		 
 		<tr><td align="center"> 
 		<form name="k" action=""> 
-		<div><input type="button" name="qw" title="Switch input mode" onClick="fadeInp()" value="Text input field "> &nbsp; <input type="button" name="stl" onClick="fadeSt()" value="Show plugboard"> &nbsp; <input type="button" name="knopf" onClick="fade()" value=" Show monitor "> &nbsp; <input type="button" name="neuladen" onClick="window.location.href=window.location.pathname" value="= New session ="></div> 
+		<div><input type="button" name="stl" onClick="fadeSt()" value="Show plugboard"> &nbsp; <input type="button" name="knopf" onClick="fade()" value=" Show monitor "> &nbsp; <input type="button" name="neuladen" onClick="window.location.href=window.location.pathname" value="= New message ="></div> 
 		</form> 
 		</td></tr> 
 		 
@@ -252,16 +252,22 @@
 	    	<p>Daniel's <a href="http://people.physik.hu-berlin.de/~palloks/js/enigma/">collection of Enigma simulations</a> is well worth a visit.</p>
 	        <p>Thanks to <a href="http://gbradley.com">gbradley</a> for providing the initial Enigma simulator which inspired this hack.</p>
 	        <p>The rest, bugs and ugliness especially, is the fault of <a href="http://twitter.com/rupertredington">@rupertredington</a>, who's looking for other fools to share the blame.</p>
+	        <p>"Enigmatic" was put together 'cos I was sad not to be able to make it to <a href="http://www.goodfornothing.co/">Good For Nothing</a></p>
 	    </div>
 	 
 	</div> 
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script>
+        // dispatcher
+        var enigmatic = $({});
+    </script>
     <script src="./enigma.js"></script>
     <script src="./enigmatic.js"></script>
     
     <script src="./facebookify.js"></script>
+    
     <div id="fb-root"></div>
     <script>
       // async loading of facebook js sdk

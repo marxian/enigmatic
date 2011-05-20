@@ -28,5 +28,23 @@ $('#transmitFB').bind('click', function(){
 $('#transmitTW').bind('click', function(){
 	var messagetext = $('#output').val();
 	var ciphertext = messagetext.replace(/ /g, '');
+    var url = 'http://twitter.com/share?';
+    url += 'url=http%3A%2F%2Fenigmatic.neontribe.co.uk%3Fciphertext%3D';
+    url += ciphertext;
+    url += '&text=';
+    url += messagetext.replace(/ /g, '+');
+    url += '+%23enigmatic';
+    window.open(url,'Tweet','width=400,height=250');
+    return false;
+
+});
+
+enigmatic.bind('inputEncrypted', function(){
+    if ($('#output').val().length > 110) {
+        alert('Your message is too long for Twitter transmission');
+        $('#transmitTW').hide();
+    } else {
+        $('#transmitTW').show();
+    }
 });
 

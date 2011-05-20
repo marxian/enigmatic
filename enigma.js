@@ -544,7 +544,9 @@ function en2(s) { // QWERTZU Main Loop (text input)...
     var zeit = ende.getTime() - start.getTime();
     document.getElementById('time').innerHTML = zeit/1000 +' s';
   }
- 
+  // ENIGMATIC ADDITION
+  // Call out on character translation - event'd be nice here
+  enigmatic.trigger('inputEncrypted');
 }
  
  
