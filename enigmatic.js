@@ -34,7 +34,7 @@ $('#transmitTW').bind('click', function(){
     url += '&text=';
     url += messagetext.replace(/ /g, '+');
     url += '+%23enigmatic';
-    window.open(url,'Tweet','width=400,height=250');
+    window.open(url,'Tweet','width=400,height=300');
     return false;
 
 });
